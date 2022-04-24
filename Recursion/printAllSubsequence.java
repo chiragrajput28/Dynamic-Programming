@@ -19,10 +19,10 @@ class printAllSubsequence {
             }
             return;
         }
-
+        print(idx+1, arr, ds, n);
         ds.add(arr[idx]);
         print(idx+1, arr, ds, n);
         ds.remove(ds.indexOf(arr[idx]));
-        print(idx+1, arr, ds, n);
+    
     }
 }
